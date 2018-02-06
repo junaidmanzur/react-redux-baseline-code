@@ -1,0 +1,24 @@
+{
+  "notes": [
+    {
+      "id": "1",
+      "title": "React & Redux baseline code",
+      "body": "This project contains a baseline code for react + redux based apps. Use this code as a way to quickly start any new project."
+    },
+    {
+      "id": "2",
+      "title": "Benefit from client-side Mock API",
+      "body": "Don't sit idle waiting for backend APIs. This code uses client-side mock apis to fetch/save data"
+    },
+    {
+      "id": "3",
+      "title": "Use react implementation of bootstrap 4",
+      "body": "Reactstrap is included in this code to develop apps with bootstrap 4"
+    },
+    {
+      "id": "4",
+      "title": "Simple note taking app to start with",
+      "body": "Minimal note taking app is added into this code to use as a guide for adding new functionality"
+    }
+  ]
+}

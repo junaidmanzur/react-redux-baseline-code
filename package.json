@@ -1,0 +1,49 @@
+{
+  "name": "react-redux-baseline-code",
+  "version": "0.1.0",
+  "description": "Baseline code for creating apps with React and Redux",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "history": "^4.7.2",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^5.0.0-alpha.9",
+    "reactstrap": "^5.0.0-alpha.4",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "json-server": "^0.12.1",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2",
+    "prop-types": "^15.6.0",
+    "react-scripts": "1.0.17",
+    "rimraf": "^2.6.2"
+  },
+  "scripts": {
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js start-api",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
+    "build-css": "rm -rf src/styles/*.css && node-sass src/styles/App.scss  src/styles/App.css --include-path ./src --include-path ./node_modules",
+    "watch-css": "npm run build-css && node-sass src/styles/App.scss  src/styles/App.css --include-path ./src --include-path ./node_modules src/styles/ --watch",
+    "start-api": "json-server --watch ./src/api/db.json --port 3002",
+    "eject": "react-scripts eject"
+  },
+  "author": "Junaid Manzoor",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "reactjs",
+    "react-router",
+    "redux",
+    "boilerplate",
+    "starter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
