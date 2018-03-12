@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<div>
+  <AppNavbar />
+  <main
+    className="container mt-5"
+    role="main"
+  >
+    <Button
+      className="mb-2"
+      color="primary"
+      onClick={[Function]}
+      outline={true}
+      tag="button"
+    >
+      Create Note
+    </Button>
+    <NotesList
+      deleteNote={[MockFunction]}
+      notes={Array []}
+    />
+    <NewNote
+      isOpen={false}
+      onDismiss={[Function]}
+    />
+  </main>
+</div>
+`;
