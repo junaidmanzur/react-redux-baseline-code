@@ -5,7 +5,9 @@ import {
     Navbar,
     NavbarToggler,
     NavbarBrand,
-    Nav
+    Nav,
+    NavItem,
+    NavLink
 } from 'reactstrap'
   
 export default class AppNavbar extends Component {
@@ -28,11 +30,20 @@ export default class AppNavbar extends Component {
     return (
       <div>
         <Navbar dark expand="md" className="bg-dark">
-          <NavbarBrand href="/">React &amp; Redux App</NavbarBrand>
+          <NavbarBrand href="/">App</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               {/* put any navbar item code here */}
+               <NavItem>
+              <NavLink href="/notes">Notes</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/item2">Item 2</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/item3">Item 3</NavLink>
+            </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
